@@ -7,7 +7,7 @@ const CONFIG = {
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Starship shield',
+  title: 'Starship Shield',
   description:
     '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
   defaultImage: defaultImage,
