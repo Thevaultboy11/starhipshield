@@ -24,22 +24,19 @@ const meta = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
+    callToAction2={{ text: 'Learn cybersecurity', href: '/blog' }}
     image={{ src: import('~/assets/images/hero2.jpg'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 2.0</span> + Tailwind CSS
+      <span class="text-accent dark:text-white highlight">Money saving</span>
+      cybersecurity agency
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 2.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.
+        <span class="font-semibold">Starship Shield</span> is here to make your life easier. We protect your digital assets,
+        giving you peace of mind to focus on your business and to make more money in the short run.
+      </span>
     </Fragment>
   </Hero>
 
@@ -47,10 +44,9 @@ const meta = {
 
   <Stats
     items={[
-      { name: 'Downloads', value: '132K' },
-      { name: 'Stars', value: '24.8K' },
-      { name: 'Forks', value: '10.3K' },
-      { name: 'Users', value: '48.4K' },
+      { name: 'Clients', value: '3' },
+      { name: 'Bugs found', value: '15' },
+      { name: 'Team size', value: '4' },
     ]}
   />
   <!-- Features Widget *************** -->
@@ -58,23 +54,21 @@ const meta = {
   <!-- Content Widget **************** -->
 
   <Content
-    highlight="Inside template"
-    title="And what's inside? ..."
+    highlight="Why should you care?"
+    title="Starship Shield"
     items={[
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Are you striving to improve your Reputation?',
         description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+          'Notifying customers of a data breach and potential financial information compromise can make them hesitant to continue doing business with you.',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
-        description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        title: 'Do you have remote employees?',
+        description: 'Scary fact is that 20% of organizations faced a security breach as a result of a remote worker.',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
-        description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        title: 'Do you store sensitive data?',
+        description: 'The average cost of a data breach in 2022 was just under $4.35 million. That’s an all-time high.',
       },
     ]}
     image={{
@@ -83,16 +77,17 @@ const meta = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-      Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod
-      tacimates.
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">The fight never stops</h3>
+
+      Cybersecurity attacks are on the rise worldwide, with a significant portion targeting smaller businesses. In fact,
+      studies show that approximately 43% of all cyberattacks target small enterprises.
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** -->
 
   <!-- Steps Widget ****************** -->
-  <Features
+  <!-- <Features
     highlight="Features"
     title="What you get with AstroWind"
     subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
@@ -138,10 +133,10 @@ const meta = {
         },
       ],
     ]}
-  />
+  /> -->
 
   <Steps
-    title="Secure your application with the experienced 🚀 Shield team."
+    title="Secure your application with 3 eazy steps."
     items={[
       {
         title: 'Undrestanding the  <span class="font-medium">scope </span>',
@@ -175,63 +170,40 @@ const meta = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
+    title="What do we offer?"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    highlight="Components"
+    highlight="Starship Shield"
     items={[
       {
-        title: 'Headers',
+        title: 'Web Application Assessment',
         description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
-        icon: 'flat-color-icons:template',
+          '<b>Blackbox</b> testing mimics real-world attacks on web sites without prior knowledge. <br><b>Whitebox</b></br> Testing involves analyzing source code and internal components for a detailed evaluation.',
+        icon: 'logos:chrome',
+      },
+
+      {
+        title: 'Mobile Application Assessment',
+        description:
+          '<b>Blackbox</b> testing simulates real-world attacks on mobile apps without prior knowledge. <br><b>Whitebox </b></br>testing involves analyzing source code and internal components for in-depth evaluation.',
+        icon: 'twemoji:mobile-phone',
       },
       {
-        title: 'Heros',
+        title: 'Networking Assessment',
         description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-        icon: 'flat-color-icons:gallery',
+          'Networking assessments involve evaluating the security of network infrastructure, including perimeter defenses, routers, and devices. <br><b>External</b></br> (Routers, firewalls) <br><b>Internal</b></br> (network switches)',
+        icon: 'flat-color-icons:broken-link',
       },
       {
-        title: 'Features',
+        title: 'Social Engineering',
         description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
-        icon: 'flat-color-icons:todo-list',
+          'We teach them to recognize and avoid social engineering attacks, where hackers manipulate people to access sensitive information.',
+        icon: 'twemoji:people-wrestling',
       },
       {
-        title: 'Content',
+        title: 'Consulting',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'icon-park:page-template',
+          'We consult and teach others about application and network security, sharing our expertise. We assess their incident response protocols and help formulate strong procedures for handling incidents effectively.',
+        icon: 'twemoji:teacher',
       },
     ]}
   />
