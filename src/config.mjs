@@ -1,8 +1,6 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'Starship Shield',
-
   origin: 'https://astrowind.vercel.app',
   basePathname: '/',
   trailingSlash: false,
