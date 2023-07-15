@@ -1,0 +1,26 @@
+---
+component: true;
+---
+
+<script setup>
+  import { onMount } from 'astro';
+
+  // Fetch Calendly code and render widget
+  onMount(async () => {
+    const response = await fetch('https://api.example.com/calendly-code'); // Replace with your API endpoint URL
+    const { code } = await response.json();
+
+    const script = document.createElement('script');
+    script.innerHTML = code;
+    script.async = true;
+
+    document.body.appendChild(script);
+  });
+</script>
+
+<div
+  class="calendly-inline-widget"
+  data-url="https://calendly.com/dzemaludin_2006/penetration-test"
+  style="min-width: 320px; height: 700px;"
+>
+</div>

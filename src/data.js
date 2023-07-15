@@ -1,5 +1,6 @@
 import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
+
 export const headerData = {
   links: [
     {
@@ -19,8 +20,7 @@ export const footerData = {
     { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
   ],
-  footNote: `
-    
+  footNote: `    
     Starship Shield · All rights reserved.
   `,
 };
