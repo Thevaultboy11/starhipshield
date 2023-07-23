@@ -7,37 +7,31 @@ import Calendly from '../components/Calendly.astro';
 import { headerData } from '~/data';
 
 const meta = {
-  title: 'Free penetration test',
+  title: 'Free Penetration Test',
 };
 ---
 
 <Layout {meta}>
   <Fragment slot="header">
-    <Header {...headerData} showRssFeed showToggleTheme position="left" />
+    <Header {...headerData} showRssFeed showToggleTheme position="right" />
   </Fragment>
 
   <!-- hero Widget ******************* -->
   <!-- callToAction={{ text: 'What we offer', href: '', icon: 'tabler:arrow-down' }} -->
   <Hero>
     <Fragment slot="title">
-      Your free penetration test
-      <span class="text-accent dark:text-white highlight mb-8"></span>
-    </Fragment>
-    <Fragment slot="image">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/dsTXcSeAZq8"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        style="width:100%"></iframe>
+      Claim your free penetration test
+      <span class="text-accent dark:text-white highlight mb-1"></span>
     </Fragment>
     <Fragment slot="subtitle">
-      <span class="block mb-1 sm:hidden font-bold text-blue-600"></span>
-      We are a new agency so we are offering a limited offer for the first 10 clients. We'll assess your network, web apps,
-      and our signature mobile app security assessment. Strengthen your defenses now. Contact us to secure your spot!
+      <span class="block sm:hidden font-bold text-blue-600"></span>
+      As a new agency, we provide a limited offer for the first 10 clients. 
+      
+      Our team of professionals will conduct a thorough security assessment of your web/mobile application and provide a high quality, concise report at the end. 
+      
+      Strengthen your defenses now. 
+
+      Contact us to secure your spot!
     </Fragment>
   </Hero>
   <Calendly />

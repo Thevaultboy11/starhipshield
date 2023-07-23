@@ -1,13 +1,11 @@
 import defaultImage from './assets/images/hero.jpg';
 
 const CONFIG = {
-  name: 'Starship Shield',
-
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://www.starshipshield.com',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Starship shield',
+  title: 'Starship Shield',
   description:
     '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
   defaultImage: defaultImage,
