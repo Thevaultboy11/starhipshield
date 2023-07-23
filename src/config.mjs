@@ -7,7 +7,7 @@ const CONFIG = {
 
   title: 'Starship Shield',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    '🚀 Empowering cyber security solutions by young minds. Claim your free security assessment. Limited availability.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
