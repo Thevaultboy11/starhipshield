@@ -5,6 +5,7 @@ import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Calendly from '../components/Calendly.astro';
 import { headerData } from '~/data';
+import Clients from '~/components/Clients.astro';
 
 const meta = {
   title: 'Free Penetration Test',
@@ -25,13 +26,9 @@ const meta = {
     </Fragment>
     <Fragment slot="subtitle">
       <span class="block sm:hidden font-bold text-blue-600"></span>
-      As a new agency, we provide a limited offer for the first 10 clients. 
-      
-      Our team of professionals will conduct a thorough security assessment of your web/mobile application and provide a high quality, concise report at the end. 
-      
-      Strengthen your defenses now. 
-
-      Contact us to secure your spot!
+      As a new agency, we provide a limited offer for the first 10 clients. Our team of professionals will conduct a thorough
+      security assessment of your web/mobile application and provide a high quality, concise report at the end. Strengthen
+      your defenses now. Contact us to secure your spot!
     </Fragment>
   </Hero>
   <Calendly />

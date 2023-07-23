@@ -6,6 +6,7 @@ import BasicScripts from '~/components/common/BasicScripts.astro';
 
 import { MetaSEO } from '~/types';
 import { SITE } from '~/config.mjs';
+import Clients from '~/components/Clients.astro';
 
 export interface Props {
   meta?: MetaSEO;
@@ -29,5 +30,6 @@ const { language = 'en', textDirection = 'ltr' } = SITE;
         content-visibility: auto;
       }
     </style>
+    <Clients />
   </body>
 </html>
