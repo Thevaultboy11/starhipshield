@@ -1,0 +1,102 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import { headerData } from '~/data';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const meta = {
+  title: 'Free Penetration Test',
+};
+---
+
+<Layout {meta}>
+  <Fragment slot="header">
+    <Header {...headerData} showRssFeed showToggleTheme position="right" />
+  </Fragment>
+
+  <!-- hero Widget ******************* -->
+  <!-- callToAction={{ text: 'What we offer', href: '', icon: 'tabler:arrow-down' }} -->
+  <Hero>
+    <Fragment slot="title">
+      <p class="w-full tracking-tight pb-4 text-xl thin md:text-3xl indent-0 text-blue-600 text-center">
+        Alen Vlahovljak
+      </p>
+      <p class="w-full tracking-tight text-center md:text-left text-3xl md:text-7xl">
+        "Starship Shield has saved us from 2 major data breaches."
+      </p>
+      <span class="text-accent dark:text-white highlight mb-1"></span>
+    </Fragment>
+  </Hero>
+  <div class="w-full flex flex-col gap-y-8 justify-center items-center -mt-16 p-4">
+    <div class="w-full h-40 md:h-80 max-w-4xl">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/QelSVeRmNUQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <Fragment slot="content">
+      <div
+        class="block max-w-4xl p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-slate-900 dark:border-slate-300 dark:hover:bg-slate-800"
+      >
+        <div class="flex flex-col gap-y-6 w-full h-full text-lg">
+          <p class="">
+            Meet <b>BoostRoom</b>, a company with a mission and vision to help gamers make money. The company has more
+            than 1000 active users on the site.
+          </p>
+
+          <p>
+            Meet <b>Alen Vlahovljak</b>, the lead developer of a team with 5+ members at Boostroom. The team is
+            integrating new modules into the application every day. The Boostroom application was not tested before.
+            Alen was confident with his team's knowledge and security measures put in place.
+          </p>
+
+          <p>
+            The Starship Shield team has found critical vulnerabilities and multiple exploitation points for 2 potential
+            data breaches.
+          </p>
+
+          <p>
+            Today, the security of the Boostroom application monitors thousands of security experts with the bug bounty
+            programs. With our hybrid model, Boostroom maintains its competitive advantage and customer satisfaction.
+          </p>
+
+          <p>The benefits:</p>
+          <ul>
+            <li>✅ Cut Core Vulnerabilities</li>
+            <li>✅ Smart Decisions for App Development</li>
+            <li>✅ Swift Assessment of New Modules</li>
+            <li>✅ ransparent, Global Hacker Collaboration</li>
+          </ul>
+
+          <p>
+            Our hybrid model isn't an easy button, but it does allow a focus on scaling and growing their business
+            securely.
+          </p>
+        </div>
+      </div>
+    </Fragment>
+
+    <div class="w-full max-w-4xl">
+      <div class="relative group">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"
+        >
+        </div>
+        <div
+          class="relative px-7 py-6 ring-1 ring-gray-900/5 bg-white border-purple-600 dark:bg-slate-900 rounded-lg leading-none flex items-top justify-start space-x-6"
+        >
+          <div class="w-full h-full flex flex-col gap-y-8 items-center">
+            <h1 class="text-left font-bold text-xl md:text-3xl">Book a call with our team</h1>
+            <p class="btn mr-4 py-4 px-7.5 md:px-6 font-semibold cursor-pointer shadow-none text-sm btn-primary">
+              Start My Application
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
