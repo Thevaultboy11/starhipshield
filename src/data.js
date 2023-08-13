@@ -8,12 +8,15 @@ export const headerData = {
       href: getPermalink(),
     },
     {
+      text: 'Case studies',
+      href: "/case-studies",
+    },
+    {
       text: 'Blog',
       href: getBlogPermalink(),
     },
   ],
-  actions: [{ type: 'primary', text: 'Free Penetration Test', href: '/book-a-meeting' }],
-};
+ };
 
 export const footerData = {
   socialLinks: [
